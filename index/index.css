@@ -1,3 +1,9 @@
+.bungee-shade-regular {
+    font-family: "Bungee Shade", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 body {
     color: rgb(0, 255, 0);
     position: relative;
@@ -17,14 +23,13 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.5; /* Adjust the opacity here */
-    z-index: -1; /* Keeps the background behind the content */
+    opacity: 0.5;
+    z-index: -1;
 }
 
-
-h1 {
-    color: white;
-    font-size: 4rem;
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
     padding-left: 50px;
     text-align: center;
     background: linear-gradient(to bottom, #2f006c, #b283b2);
@@ -33,25 +38,22 @@ h1 {
     background-position: top center;
     margin: 0;
     border-bottom: 5px solid rgb(255, 0, 230);
-    padding-bottom: 60px;
-    font-family: 'Vipnagorgialla', sans-serif;
+    font-family: "Bungee Shade", serif;
 }
 
-h2 {
-    color: limegreen;
-    font-size: 2rem;
-    padding-left: 25px;
-    margin-top: 50px;
-}
 
 .nav {
     color: rgb(0, 255, 0);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 40px;
-    margin-top: 30px;
-    font-size: 1.5rem;
+    padding-left: 70px;
+    margin-top: 96px;
+    font-size: 3.2rem;
+
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .nav-link {
@@ -66,8 +68,8 @@ h2 {
 
 .banana-gif {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 90px;
+    left: 30px;
     width: 200px;
     height: auto;
 }
@@ -83,3 +85,67 @@ h2 {
     font-family: 'Vipnagorgialla';
     src: url('Vipnagorgialla Rg.otf') format('opentype');
 }
+
+.h2-content {
+    padding: 10px 20px;
+    color: white;
+    text-align: right;
+    margin-top: 3rem;
+    margin-right: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    max-width: 80%;
+    border-right: 3px solid white;
+    animation: typing 6s steps(30) infinite, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.bottom-text {
+    animation: expandShrink 2s ease-in-out infinite;
+    margin-left: 100px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+@keyframes expandShrink {
+    0% {
+        color: white;
+    }
+    50% {
+        color: magenta;
+    }
+    100% {
+        color: white;
+    }
+}
+
+.cat {
+    position: absolute;
+    top: 20rem;
+    right: 37px;
+    width: 400px;
+    height: auto;
+}
+

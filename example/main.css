@@ -1,0 +1,172 @@
+body {
+    background-color: black;
+}
+.card {
+    padding: 2rem;
+    background-color: lightblue;
+    border-radius: 2rem;
+  }
+  .card__title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .card__excerpt {
+    margin: 2rem;
+  }
+
+  .card__image {
+      object-fit: contain;
+      aspect-ratio: 16/9; 
+      animation: rotateImage 1s linear infinite; 
+
+  }
+  .card__more {
+    display: block;
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  .card__more:hover {
+    border-radius: 3em;
+  }
+
+  .card__more:active {
+    background-color: rgb(113, 215, 255); 
+    padding: 1rem; 
+  } 
+
+  @keyframes rotateImage {
+    0% {
+        transform: rotate(0deg); 
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg); 
+    }
+    75% {
+        transform: rotate(350deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+
+  @media screen and (min-width: 1024px) {
+    .card {
+        background-color: navy;
+        animation: backgroundChange 1s linear infinite; 
+
+    }
+    .card__title {
+        font-size: 4rem;
+    }
+    .card__excerpt {
+        font-size: 2rem;
+    }
+    .card__image {
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 200px;
+    }
+
+    .card__more {
+        margin-top: 2rem;
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .card__more:hover {
+        border-radius: 1rem;
+    }
+    .card__more:active {
+        padding: 1rem;
+        background-color: indigo;
+    }
+
+    @keyframes backgroundChange {
+        0% {
+            color: purple;
+        }
+        33% {
+            color: rgb(98, 116, 255);
+        }
+        66% {
+            color: lime;
+        }
+        100% {
+            color: purple;
+        }
+    }
+  }
+
+  /* You can leave everything below as is — we'll explain flexbox in a later lecture! */
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 8vw;
+  }
+
+  .plants-header {
+    font-size: 6rem;
+    font-weight: bold;
+    color: lightskyblue;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    animation: colorChange 0.5s infinite; 
+
+}
+
+@keyframes colorChange {
+    0% {
+        color: lightblue;
+    }
+    33% {
+        color: magenta;
+    }
+    66% {
+        color: lime;
+    }
+    100% {
+        color: lightblue;
+    }
+}
+
+.plants-paragraph {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    animation: expandShrink 2s ease-in-out infinite; 
+}
+
+@keyframes expandShrink {
+    0% {
+        font-size: 1rem; 
+        color: white;
+    }
+    50% {
+        font-size: 2rem; 
+        color: blue;
+    }
+    100% {
+        font-size: 1rem; 
+        color: white;
+    }
+}
+
+.paragraph-normal {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+}
