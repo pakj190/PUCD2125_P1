@@ -51,6 +51,7 @@ body {
     font-size: 3rem;
     margin-left: 4rem;
     font-family: "Pixelify Sans", sans-serif;
+    font-weight: normal;
 }
 
 .paragraph1 {
@@ -59,6 +60,7 @@ body {
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
+    margin-top: 10rem;
 }
 
 .paragraph2 {
@@ -66,6 +68,8 @@ body {
     margin-left: 200px;
     max-width: 900px;
     margin: 40px;
+    margin-top: 60rem;
+    padding-bottom: 10rem;
 }
 
 .paragraph3 {
@@ -73,6 +77,84 @@ body {
     text-align: right;
     max-width: 500px;
     margin-left: 700px;
+    font-weight: bold;
+    padding-bottom: 10rem;
+}
+
+.paragraph4 {
+    font-size: 20px;
+    text-align: left;
+    max-width: 550px;
+    margin-left: 100px;
+    padding-bottom: 10rem;
+}
+
+.paragraph5 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+    margin: 10rem;
+    max-width: 90rem;
+    padding-bottom: 40px;
+    animation: blink 2s infinite;
+    color: white;
+    text-shadow: 0 0 10px rgb(9, 255, 0), 0 0 20px rgb(81, 255, 0), 0 0 30px rgb(0, 255, 0), 0 0 40px rgb(0, 255, 0); 
+}
+
+.forward-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: lime;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    box-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
+}
+
+.forward-button:hover {
+    background-color: magenta;
+    box-shadow: 0 0 20px magenta, 0 0 30px magenta, 0 0 40px magenta;
+    color: black;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.home-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: magenta;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    box-shadow: 0 0 10px magenta, 0 0 20px magenta, 0 0 30px magenta;
+}
+
+.home-button:hover {
+    background-color: lime;
+    box-shadow: 0 0 20px lime, 0 0 30px lime, 0 0 40px lime;
+    color: black;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 body::before {
@@ -83,9 +165,8 @@ body::before {
     right: 0;
     bottom: 0;
     background-image: url('heart background.webp');
-    background-size: auto 100%; /* Ensure the image scales only vertically */
-    background-position: center top; /* Align the image to the top of the viewport */
-    background-repeat: repeat-y;
-    opacity: 0.5;
+    background-size: 100%;
+    background-position: center top;
+    opacity: 0.4;
     z-index: -1;
 }

@@ -1,0 +1,157 @@
+.bungee-shade-regular {
+    font-family: "Bungee Shade", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    color: yellow;
+    position: relative;
+    background: black;
+    height: 100vh;
+    margin: 0;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    padding-left: 50px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffcc00, #ff0048);
+    padding: 60px;
+    background-size: 100% 100%;
+    background-position: top center;
+    margin: 0;
+    border-bottom: 5px solid rgb(0, 255, 128);
+    font-family: "Bungee Shade", serif;
+}
+
+@font-face {
+    font-family: 'Vipnagorgialla';
+    src: url('Vipnagorgialla Rg.otf') format('opentype');
+}
+
+.headerTitle {
+    font-size: 3rem;
+    margin-left: 4rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: normal;
+}
+
+.paragraph1 {
+    font-size: 6rem;;
+    margin-left: 200px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding-top: 15rem;
+}
+
+.paragraph2 {
+    font-size: 25px;
+    padding-top: 20rem;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+.paragraph3 {
+    font-size: 25px;
+    padding-top: 50rem;
+    margin-left: 3rem;
+    max-width: 5rem;
+    color: white; /* White color for the text */
+    text-shadow: 
+        0 0 10px red, 
+        0 0 20px red, 
+        0 0 30px yellow, 
+        0 0 40px rgb(77, 255, 0), 
+        0 0 50px rgb(157, 255, 0); /* Increased shadow layers for stronger glow */
+}
+
+.forward-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: lime;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0 ease;
+    box-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
+}
+
+.forward-button:hover {
+    background-color: magenta;
+    box-shadow: 0 0 20px magenta, 0 0 30px magenta, 0 0 40px magenta;
+    color: black;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.home-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color  ease;
+    box-shadow: 0 0 10px rgb(255, 196, 0), 0 0 20px rgb(136, 255, 0), 0 0 30px rgb(255, 238, 0);
+}
+
+.home-button:hover {
+    background-color: lime;
+    box-shadow: 0 0 20px lime, 0 0 30px lime, 0 0 40px lime;
+    color: black;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('star.background.jpg');
+    background-size: 100%;
+    background-position: center top;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.running-pikachu {
+    position: absolute;
+    top: 22%; /* Position the image below the title */
+    left: -200px; /* Start from the left outside the screen */
+    width: 100px; /* Adjust the size of the image */
+    animation: moveRight 10s linear infinite; /* Animation duration and infinite loop */
+}
+
+@keyframes moveRight {
+    0% {
+        left: -200px; /* Start from left outside */
+    }
+    100% {
+        left: 100vw; /* End at the right side of the screen */
+    }
+}
+
