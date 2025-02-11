@@ -32,14 +32,15 @@ body::before {
     font-size: 5rem;
     padding-left: 50px;
     text-align: center;
-    background: linear-gradient(to bottom, #2f006c, #b283b2);
     padding: 60px;
-    background-size: 100% 100%;
-    background-position: top center;
+    background-image: url('pinkzebra.jpg');
+    background-size: cover;  /* Ensures the image covers the entire element */
+    background-position: center center;  /* Centers the image */
     margin: 0;
     border-bottom: 5px solid rgb(255, 0, 230);
     font-family: "Bungee Shade", serif;
 }
+
 
 
 .nav {
