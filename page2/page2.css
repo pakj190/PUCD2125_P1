@@ -89,6 +89,7 @@ body {
     background-color: lime;
     color: black;
     border: none;
+    margin: auto 10px auto 10px;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;

@@ -4,8 +4,15 @@
     font-style: normal;
 }
 
+.poor-story-regular {
+    font-family: "Poor Story", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 body {
-    color: yellow;
+    color: rgb(255, 106, 131);
     position: relative;
     background: black;
     height: 100vh;
@@ -31,12 +38,12 @@ body::before {
     font-size: 5rem;
     padding-left: 50px;
     text-align: center;
-    background: linear-gradient(to bottom, #ffcc00, #ff0048);
+    background: linear-gradient(to bottom, magenta, pink);
     padding: 60px;
     background-size: 100% 100%;
     background-position: top center;
     margin: 0;
-    border-bottom: 5px solid rgb(0, 255, 128);
+    border-bottom: 5px solid rgb(43, 0, 255);
     font-family: "Bungee Shade", serif;
 }
 
@@ -53,12 +60,14 @@ body::before {
 }
 
 .paragraph1 {
-    font-size: 6rem;;
+    font-size: 3rem;
     margin-left: 200px;
     text-align: center;
     margin: 0 auto;
     margin-top: 10rem;
-    padding-top: 15rem;
+    padding-top: 2rem;
+    font-family: "Poor Story", serif;
+
 }
 
 .paragraph2 {
@@ -66,38 +75,40 @@ body::before {
     padding-top: 20rem;
     margin-left: 20px;
     letter-spacing: 2px;
+    font-family: "Poor Story", serif;
+
 }
 
 .paragraph3 {
     font-size: 25px;
+    text-align: center;
     padding-top: 50rem;
+    padding-bottom: 20rem;
     margin-left: 3rem;
-    max-width: 5rem;
-    color: white; /* White color for the text */
-    text-shadow: 
-        0 0 10px red, 
-        0 0 20px red, 
-        0 0 30px yellow, 
-        0 0 40px rgb(77, 255, 0), 
-        0 0 50px rgb(157, 255, 0); /* Increased shadow layers for stronger glow */
+    max-width: 100px;
+    color: salmon; 
+    font-family: "Poor Story", serif;
+    margin: 0 auto;
 }
 
-.forward-button {
-    font-size: 20px;
-    padding: 10px 20px;
-    background-color: lime;
-    color: black;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0 ease;
-    box-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
+.paragraph4 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50rem;
+    max-width: 500px;
+    color: magenta;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
 }
 
-.forward-button:hover {
-    background-color: magenta;
-    box-shadow: 0 0 20px magenta, 0 0 30px magenta, 0 0 40px magenta;
-    color: black;
+.paragraph5 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50rem;
+    max-width: 500px;
+    color: palevioletred;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
 }
 
 .center-container {
@@ -111,19 +122,20 @@ body::before {
 .home-button {
     font-size: 20px;
     padding: 10px 20px;
-    background-color: yellow;
+    margin: auto 10px auto 10px;
+    background-color: fuchsia;
     color: black;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color  ease;
-    box-shadow: 0 0 10px rgb(255, 196, 0), 0 0 20px rgb(136, 255, 0), 0 0 30px rgb(255, 238, 0);
+    box-shadow: 0 0 10px rgb(255, 178, 178), 0 0 20px rgb(255, 0, 153), 0 0 30px rgb(255, 0, 212);
 }
 
 .home-button:hover {
-    background-color: lime;
-    box-shadow: 0 0 20px lime, 0 0 30px lime, 0 0 40px lime;
-    color: black;
+    background-color: rgb(31, 0, 31);
+    box-shadow: 0 0 20px fuchsia, 0 0 30px rgb(85, 0, 255), 0 0 40px rgb(255, 29, 244);
+    color: white;
 }
 
 @keyframes blink {
@@ -138,5 +150,13 @@ body::before {
     }
 }
 
-
+.container {
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .globe-img {
+    width: 500px; 
+    height: auto;
+  }
 

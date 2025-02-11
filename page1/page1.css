@@ -111,6 +111,8 @@ body {
     cursor: pointer;
     transition: background-color 0.1s ease;
     box-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
+    margin: auto 10px auto 10px;
+
 }
 
 .forward-button:hover {
@@ -137,6 +139,8 @@ body {
     cursor: pointer;
     transition: background-color 0.1s ease;
     box-shadow: 0 0 10px magenta, 0 0 20px magenta, 0 0 30px magenta;
+    margin: auto 10px auto 10px;
+
 }
 
 .home-button:hover {
