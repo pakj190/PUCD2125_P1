@@ -1,21 +1,18 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     color: yellow;
     position: relative;
     background: black;
     height: 100vh;
     margin: 0;
-    font-family: 'Press Start 2P', monospace; /* Pixelated font */
+    font-family: 'Press Start 2P', monospace;
 }
 
-/* Title Styling */
 .title {
     color: rgb(255, 255, 255);
     font-size: 5rem;
@@ -31,21 +28,19 @@ body {
     text-shadow: 0 0 10px #fff, 0 0 20px #ff0048, 0 0 30px lime;
 }
 
-/* Font-face for custom fonts */
 @font-face {
     font-family: 'Vipnagorgialla';
     src: url('Vipnagorgialla Rg.otf') format('opentype');
 }
 
-/* Header Styling */
 .headerTitle {
     font-size: 3rem;
     margin-left: 4rem;
     font-family: "Pixelify Sans", sans-serif;
     font-weight: normal;
+    margin-top: 5rem;
 }
 
-/* Main Paragraph Styling */
 .paragraph1 {
     font-size: 5rem;
     margin-left: 200px;
@@ -53,27 +48,25 @@ body {
     margin: 0 auto;
     margin-top: 10rem;
     padding-top: 15rem;
-    color: #ff00ff; /* Neon purple */
-    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+    color: lime;
+    text-shadow: 0 0 10px rgb(152, 255, 155), 0 0 10px rgb(5, 108, 0);
 }
 
-/* Second Paragraph Styling */
 .paragraph2 {
     font-size: 25px;
     padding-top: 20rem;
-    margin-left: 20px;
+    margin-right: 20px;
     letter-spacing: 2px;
-    color: #ffff00; /* Bright yellow */
+    color: #ffff00;
     padding: 20rem 20px 0 20px;
+    max-width: 70rem;
 }
 
-/* Third Paragraph Styling */
 .paragraph3 {
     font-size: 25px;
     padding-top: 50rem;
     margin-left: 3rem;
-    max-width: 5rem;
-    color: white; /* White color for the text */
+    color: white;
     text-shadow: 
         0 0 10px red, 
         0 0 20px red, 
@@ -82,7 +75,6 @@ body {
         0 0 50px rgb(157, 255, 0);
 }
 
-/* Buttons Styling */
 .forward-button {
     font-size: 20px;
     padding: 10px 20px;
@@ -103,7 +95,6 @@ body {
     color: black;
 }
 
-/* Centering Container for content */
 .center-container {
     display: flex;
     justify-content: center;
@@ -112,7 +103,6 @@ body {
     margin: 0;
 }
 
-/* Home Button Styling */
 .home-button {
     font-size: 20px;
     padding: 10px 20px;
@@ -131,7 +121,6 @@ body {
     color: black;
 }
 
-/* Blinking Animation */
 @keyframes blink {
     0% {
         opacity: 1;
@@ -144,7 +133,6 @@ body {
     }
 }
 
-/* Background Overlay */
 body::before {
     content: "";
     position: absolute;
@@ -159,20 +147,44 @@ body::before {
     z-index: -1;
 }
 
-/* Running Pikachu Animation */
 .running-pikachu {
     position: absolute;
-    top: 22%; /* Position the image below the title */
-    left: -200px; /* Start from the left outside the screen */
-    width: 100px; /* Adjust the size of the image */
-    animation: moveRight 10s linear infinite; /* Animation duration and infinite loop */
+    top: 22%;
+    left: -200px;
+    width: 100px;
+    animation: moveRight 10s linear infinite;
 }
 
 @keyframes moveRight {
     0% {
-        left: -200px; /* Start from left outside */
+        left: -200px;
     }
     100% {
-        left: 100vw; /* End at the right side of the screen */
+        left: 100vw;
     }
+}
+
+.popup {
+    width: 50em; /* Set the width of the popup container */
+    height: auto; /* Adjust height based on the image's aspect ratio */
+    margin-left: 10rem;
+    margin-top: 50rem;
+}
+
+.popup img {
+    width: 100%; /* Scale the image to fit the width of the popup */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.fade-in-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.fade-in-out.visible {
+    opacity: 1;
+}
+
+html {
+    scroll-behavior: smooth;
 }

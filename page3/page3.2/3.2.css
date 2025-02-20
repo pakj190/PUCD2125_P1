@@ -67,15 +67,18 @@ body::before {
     margin-top: 10rem;
     padding-top: 2rem;
     font-family: "Poor Story", serif;
+    max-width: 40rem;
 
 }
 
 .paragraph2 {
     font-size: 25px;
     padding-top: 20rem;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
     letter-spacing: 2px;
     font-family: "Poor Story", serif;
+    max-width: 90rem;
 
 }
 
@@ -160,3 +163,15 @@ body::before {
     height: auto;
   }
 
+.fade-in-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.fade-in-out.visible {
+    opacity: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}

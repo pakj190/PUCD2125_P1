@@ -24,21 +24,44 @@
     <h2 class="headerTitle">Hooks and Humor: Crochet as a Social Activity
     </h2>
 
-    <p class="paragraph1">Crochet has always been a social craft, but in the year 2000, it took on a new dimension. </p>
+    <p class="paragraph1 fade-in-out">Crochet has always been a social craft, but in the year 2000, it took on a new dimension. </p>
 
-    <p class="paragraph2">Crochet circles and clubs became popular, offering a space for enthusiasts to gather, share tips, and, most importantly, laugh. 
+
+    <p class="paragraph2 fade-in-out">Crochet circles and clubs became popular, offering a space for enthusiasts to gather, share tips, and, most importantly, laugh. 
         These gatherings were about more than just crochet; 
-        they were a chance to build friendships and community. 
-        The humor and camaraderie shared in these circles made crochet a joyful and fulfilling activity that went beyond the stitches themselves.</p>
+        they were a chance to build friendships and community. </p>
     
-    <p class="paragraph3">The rise of crochet-themed events and conventions further cemented its status as a social activity.</p>
+        <div class="popup">
+            <img src="blurb.jpg" alt="pixel blurb">
+        </div>
+    
+    <p class="paragraph3 fade-in-out">The rise of crochet-themed events and conventions further cemented its status as a social activity.</p>
 
     <div class="center-container">
-        <button class="home-button" onclick="window.location.href='../index.html';">wanna go back home</button>
+        <button class="home-button" onclick="window.location.href='../page1/page1.html';">go back?</button>
 
         <button class="forward-button" onclick="window.location.href='../page3/page3.html';">lets move on</button>
 
     </div>
+
+    <script>
+        // IntersectionObserver to detect scroll and add fade-in/out class
+        const fadeElements = document.querySelectorAll('.title, .headerTitle, .paragraph1, .paragraph2, .paragraph3, .paragraph4, .paragraph5');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
 
     </body>
 </html>

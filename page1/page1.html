@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
-
-	<title>CRAYZEE4CROCHET</title>
-	<link rel="stylesheet" href="page1.css"> 
+    <title>CRAYZEE4CROCHET</title>
+    <link rel="stylesheet" href="page1.css"> 
 </head>
-<body class="home"> 
+<body class="home">
 
-	<h1 class="title">CRAYZEE4CROCHET</h1>
-    <h2 class="headerTitle">The Yarn Revolution: New Materials and Techniques
-    </h2>
+    <h1 class="title fade-in-out">CRAYZEE4CROCHET</h1>
+    <h2 class="headerTitle fade-in-out">The Yarn Revolution: New Materials and Techniques</h2>
 
-    <p class="paragraph1">The year 2000 saw a significant shift in the materials available to crocheters. 
-        Gone were the days of plain, uninspiring yarns.</p>
+    <p class="paragraph1 fade-in-out">The year 2000 saw a significant shift in the materials available to crocheters. Gone were the days of plain, uninspiring yarns.</p>
     
-    <p class="paragraph2">Instead, shelves were stocked with an array of vibrant colors, textures, and fibers that sparked the imagination of crocheters everywhere. 
-        Innovative techniques also emerged, 
-        pushing the boundaries of what was possible with a simple hook and yarn.</p>
+    <p class="paragraph2 fade-in-out">Instead, shelves were stocked with an array of vibrant colors, textures, and fibers that sparked the imagination of crocheters everywhere. Innovative techniques also emerged, pushing the boundaries of what was possible with a simple hook and yarn.</p>
 
-    <p class="paragraph3">From intricate lacework to bold, chunky designs, the possibilities were endless.</p>
+    <p class="paragraph3 fade-in-out">From intricate lacework to bold, chunky designs, the possibilities were endless.</p>
 
-    <p class="paragraph4">This evolution in materials and techniques allowed crocheters to experiment and create pieces that were truly one-of-a-kind. 
-        But it wasn’t just the yarn and techniques that were evolving; the tools of the trade saw an upgrade too. </p>
+    <p class="paragraph4 fade-in-out">This evolution in materials and techniques allowed crocheters to experiment and create pieces that were truly one-of-a-kind. But it wasn’t just the yarn and techniques that were evolving; the tools of the trade saw an upgrade too.</p>
 
-    <p class="paragraph5">Hooks made from exotic woods, ergonomic designs, 
-        and even glow-in-the-dark options became popular, 
-        making crochet not just a hobby, but a lifestyle.
-    </p>
+    <p class="paragraph5 fade-in-out">Hooks made from exotic woods, ergonomic designs, and even glow-in-the-dark options became popular, making crochet not just a hobby, but a lifestyle.</p>
 
     <div class="center-container">
-        <button class="home-button" onclick="window.location.href='../index.html';">wanna go back home</button>
-
-        <button class="forward-button" onclick="window.location.href='../page2/page2.html';">lets move on</button>
-
+        <button class="home-button" onclick="window.location.href='../index.html';">Wanna go back home</button>
+        <button class="forward-button" onclick="window.location.href='../page2/page2.html';">Let's move on</button>
     </div>
 
-    </body>
+    <script>
+        // IntersectionObserver to detect scroll and add fade-in/out class
+        const fadeElements = document.querySelectorAll('.title, .headerTitle, .paragraph1, .paragraph2, .paragraph3, .paragraph4, .paragraph5');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+
+</body>
 </html>

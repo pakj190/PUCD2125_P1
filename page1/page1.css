@@ -4,23 +4,39 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Vipnagorgialla';
+    src: url('Vipnagorgialla Rg.otf') format('opentype');
+}
+
 body {
-    color: rgb(0, 255, 0);
     position: relative;
-    background: black;
-    height: 100vh;
     margin: 0;
+    color: rgb(0, 255, 0);
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    z-index: -1;
+    background-color: rgba(33, 33, 33, 0.7);
 }
 
 .title {
-    color: rgb(255, 255, 255);
     font-size: 5rem;
-    padding-left: 50px;
+    color: #fff;
+    padding: 60px;
     text-align: center;
     background: linear-gradient(to bottom, #2f006c, #b283b2);
-    padding: 60px;
-    background-size: 100% 100%;
-    background-position: top center;
     margin: 0;
     border-bottom: 5px solid rgb(248, 189, 229);
     font-family: "Bungee Shade", serif;
@@ -40,11 +56,6 @@ body {
     100% {
         background: linear-gradient(to left, magenta, blue);
     }
-}
-
-@font-face {
-    font-family: 'Vipnagorgialla';
-    src: url('Vipnagorgialla Rg.otf') format('opentype');
 }
 
 .headerTitle {
@@ -112,7 +123,6 @@ body {
     transition: background-color 0.1s ease;
     box-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
     margin: auto 10px auto 10px;
-
 }
 
 .forward-button:hover {
@@ -140,7 +150,6 @@ body {
     transition: background-color 0.1s ease;
     box-shadow: 0 0 10px magenta, 0 0 20px magenta, 0 0 30px magenta;
     margin: auto 10px auto 10px;
-
 }
 
 .home-button:hover {
@@ -161,16 +170,15 @@ body {
     }
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('heart background.webp');
-    background-size: 100%;
-    background-position: center top;
-    opacity: 0.4;
-    z-index: -1;
+.fade-in-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.fade-in-out.visible {
+    opacity: 1;
+}
+
+html {
+    scroll-behavior: smooth;
 }
