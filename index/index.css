@@ -150,3 +150,130 @@ body::before {
     height: auto;
 }
 
+/* Responsive Design for Larger Screens */
+
+/* For screens wider than 1200px */
+@media (min-width: 1200px) {
+    .title {
+        font-size: 6rem; /* Larger font size for the title */
+        padding: 80px; /* More padding for the title */
+    }
+
+    .nav {
+        font-size: 4rem; /* Increase the font size for navigation */
+        padding-left: 100px; /* Add more space for larger screens */
+        margin-top: 120px; /* Increase the margin-top */
+    }
+
+    .nav-link {
+        font-size: 3.2rem; /* Larger links in the nav */
+    }
+
+    .banana-gif {
+        width: 300px; /* Larger gif size */
+    }
+
+    .content {
+        padding: 80px; /* Larger padding for the content */
+        font-size: 2.5rem; /* Bigger font size for the content */
+    }
+
+    .h2-content {
+        font-size: 3rem; /* Increase font size of h2-content */
+        margin-right: 100px; /* More space to the right */
+    }
+
+    .bottom-text {
+        font-size: 2.5rem; /* Bigger font size for bottom text */
+        margin-left: 150px; /* Larger margin-left */
+    }
+
+    .cat {
+        top: 30rem; /* Adjust the position of the cat */
+        width: 500px; /* Bigger cat image */
+    }
+}
+
+/* For screens wider than 992px */
+@media (min-width: 992px) {
+    .title {
+        font-size: 5.5rem;
+        padding: 70px;
+    }
+
+    .nav {
+        font-size: 3.5rem;
+        padding-left: 90px;
+        margin-top: 110px;
+    }
+
+    .nav-link {
+        font-size: 3rem;
+    }
+
+    .banana-gif {
+        width: 250px;
+    }
+
+    .content {
+        padding: 70px;
+        font-size: 2.2rem;
+    }
+
+    .h2-content {
+        font-size: 2.8rem;
+        margin-right: 80px;
+    }
+
+    .bottom-text {
+        font-size: 2.3rem;
+        margin-left: 120px;
+    }
+
+    .cat {
+        top: 25rem;
+        width: 450px;
+    }
+}
+
+/* For screens wider than 768px */
+@media (min-width: 768px) {
+    .title {
+        font-size: 5rem;
+        padding: 60px;
+    }
+
+    .nav {
+        font-size: 3.2rem;
+        padding-left: 80px;
+        margin-top: 100px;
+    }
+
+    .nav-link {
+        font-size: 2.8rem;
+    }
+
+    .banana-gif {
+        width: 230px;
+    }
+
+    .content {
+        padding: 60px;
+        font-size: 2rem;
+    }
+
+    .h2-content {
+        font-size: 2.5rem;
+        margin-right: 70px;
+    }
+
+    .bottom-text {
+        font-size: 2rem;
+        margin-left: 100px;
+    }
+
+    .cat {
+        top: 23rem;
+        width: 400px;
+    }
+}

@@ -132,3 +132,83 @@ h2 {
     padding: 30px;
     background-color: black;
 }
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 4rem;
+        padding: 50px;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+        padding: 30px;
+    }
+
+    .regular-text, .regular-text2 {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .back-button {
+        width: 90px;
+        height: 80px;
+        top: 18rem;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 3rem;
+        padding: 40px;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        padding: 20px;
+    }
+
+    .regular-text, .regular-text2 {
+        font-size: 1.8rem;
+        padding: 15px;
+    }
+
+    .back-button {
+        width: 80px;
+        height: 70px;
+        top: 16rem;
+        line-height: 45px;
+    }
+
+    .main {
+        grid-template-columns: 1fr 1fr; /* Make it 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 3rem;
+        padding: 15px;
+    }
+
+    .regular-text, .regular-text2 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .back-button {
+        width: 70px;
+        height: 60px;
+        top: 14rem;
+        line-height: 40px;
+    }
+
+    .main {
+        grid-template-columns: 1fr; /* Stack the grid items on smaller screens */
+    }
+}
