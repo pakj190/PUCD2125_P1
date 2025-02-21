@@ -165,15 +165,15 @@ body::before {
 }
 
 .popup {
-    width: 50em; /* Set the width of the popup container */
-    height: auto; /* Adjust height based on the image's aspect ratio */
+    width: 50em; 
+    height: auto; 
     margin-left: 10rem;
     margin-top: 50rem;
 }
 
 .popup img {
-    width: 100%; /* Scale the image to fit the width of the popup */
-    height: auto; /* Maintain the image's aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .fade-in-out {

@@ -34,8 +34,8 @@ body::before {
     text-align: center;
     padding: 60px;
     background-image: url('pinkzebra.jpg');
-    background-size: cover;  /* Ensures the image covers the entire element */
-    background-position: center center;  /* Centers the image */
+    background-size: cover;  
+    background-position: center center;  
     margin: 0;
     border-bottom: 5px solid rgb(255, 0, 230);
     font-family: "Bungee Shade", serif;
@@ -150,51 +150,48 @@ body::before {
     height: auto;
 }
 
-/* Responsive Design for Larger Screens */
 
-/* For screens wider than 1200px */
 @media (min-width: 1200px) {
     .title {
-        font-size: 6rem; /* Larger font size for the title */
-        padding: 80px; /* More padding for the title */
+        font-size: 6rem; 
+        padding: 80px; 
     }
 
     .nav {
-        font-size: 4rem; /* Increase the font size for navigation */
-        padding-left: 100px; /* Add more space for larger screens */
-        margin-top: 120px; /* Increase the margin-top */
+        font-size: 4rem; 
+        padding-left: 100px; 
+        margin-top: 120px; 
     }
 
     .nav-link {
-        font-size: 3.2rem; /* Larger links in the nav */
+        font-size: 3.2rem;
     }
 
     .banana-gif {
-        width: 300px; /* Larger gif size */
+        width: 300px; 
     }
 
     .content {
-        padding: 80px; /* Larger padding for the content */
-        font-size: 2.5rem; /* Bigger font size for the content */
+        padding: 80px; 
+        font-size: 2.5rem; 
     }
 
     .h2-content {
-        font-size: 3rem; /* Increase font size of h2-content */
-        margin-right: 100px; /* More space to the right */
+        font-size: 3rem; 
+        margin-right: 100px; 
     }
 
     .bottom-text {
-        font-size: 2.5rem; /* Bigger font size for bottom text */
-        margin-left: 150px; /* Larger margin-left */
+        font-size: 2.5rem; 
+        margin-left: 150px; 
     }
 
     .cat {
-        top: 30rem; /* Adjust the position of the cat */
-        width: 500px; /* Bigger cat image */
+        top: 30rem; 
+        width: 500px; 
     }
 }
 
-/* For screens wider than 992px */
 @media (min-width: 992px) {
     .title {
         font-size: 5.5rem;
